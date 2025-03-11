@@ -21,7 +21,7 @@ const HeroSection = () => {
     <section className="relative w-full h-[70vh] overflow-hidden">
       {/* Hero Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-indigo-900/80 backdrop-filter backdrop-blur-sm z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-cyan-700/80 backdrop-filter backdrop-blur-sm z-10"></div>
         <img
           src="/lovable-uploads/2bb8bdd1-164f-4096-858f-4a67d321f71b.png"
           alt="Houston Skyline"
@@ -36,7 +36,7 @@ const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-white text-center">
         <div className={cn("transition-all duration-1000", isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10")}>
-          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-gradient-to-r from-amber-400 to-amber-500 text-purple-900 rounded-full animate-fade-in">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-gradient-to-r from-amber-400 to-amber-500 text-blue-900 rounded-full animate-fade-in">
             Premium Houston Domain Broker
           </span>
           
@@ -71,13 +71,13 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mt-4 animate-fade-in delay-300">
             <a 
               href="#domains" 
-              className="px-6 py-2 bg-gradient-to-r from-amber-400 to-amber-500 text-purple-900 font-medium rounded-md transition-all duration-300 hover:shadow-lg hover:opacity-90"
+              className="px-6 py-2 bg-gradient-to-r from-amber-400 to-amber-500 text-blue-900 font-medium rounded-md transition-all duration-300 hover:shadow-lg hover:opacity-90"
             >
               View Domains
             </a>
             <a 
               href="#contact" 
-              className="px-6 py-2 bg-transparent border border-teal-300 text-white font-medium rounded-md transition-all duration-300 hover:bg-teal-300/10"
+              className="px-6 py-2 bg-transparent border border-cyan-300 text-white font-medium rounded-md transition-all duration-300 hover:bg-cyan-300/10"
             >
               Contact Us
             </a>
@@ -87,7 +87,7 @@ const HeroSection = () => {
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-float">
           <a 
             href="#domains" 
-            className="flex flex-col items-center text-teal-300 hover:text-white transition-colors duration-300"
+            className="flex flex-col items-center text-cyan-300 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm mb-1">Scroll Down</span>
             <ArrowDown className="h-4 w-4" />

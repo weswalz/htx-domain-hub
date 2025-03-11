@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-blue-800 to-cyan-900 text-white py-16">
+    <footer className="bg-gradient-to-br from-blue-600 to-cyan-700 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
@@ -19,22 +19,22 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a href="#domains" className="text-white/80 hover:text-amber-300 transition-colors duration-300 flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2 text-teal-300" /> Available Domains
+                  <ArrowRight className="h-4 w-4 mr-2 text-cyan-300" /> Available Domains
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-white/80 hover:text-amber-300 transition-colors duration-300 flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2 text-teal-300" /> Contact Us
+                  <ArrowRight className="h-4 w-4 mr-2 text-cyan-300" /> Contact Us
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/80 hover:text-amber-300 transition-colors duration-300 flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2 text-teal-300" /> Domain FAQs
+                  <ArrowRight className="h-4 w-4 mr-2 text-cyan-300" /> Domain FAQs
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/80 hover:text-amber-300 transition-colors duration-300 flex items-center">
-                  <ArrowRight className="h-4 w-4 mr-2 text-teal-300" /> Privacy Policy
+                  <ArrowRight className="h-4 w-4 mr-2 text-cyan-300" /> Privacy Policy
                 </a>
               </li>
             </ul>

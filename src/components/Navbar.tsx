@@ -34,7 +34,7 @@ const Navbar = () => {
           href="#"
           className={cn(
             "text-2xl font-display font-bold transition-colors duration-300",
-            isScrolled ? "text-blue-800" : "text-white"
+            isScrolled ? "text-blue-700" : "text-white"
           )}
         >
           Houston Domains
@@ -46,7 +46,7 @@ const Navbar = () => {
             href="#domains"
             className={cn(
               "font-medium transition-all duration-300 hover:text-amber-400",
-              isScrolled ? "text-cyan-700" : "text-white"
+              isScrolled ? "text-blue-600" : "text-white"
             )}
           >
             Domains
@@ -55,7 +55,7 @@ const Navbar = () => {
             href="#contact"
             className={cn(
               "font-medium transition-all duration-300 hover:text-amber-400",
-              isScrolled ? "text-cyan-700" : "text-white"
+              isScrolled ? "text-blue-600" : "text-white"
             )}
           >
             Contact
@@ -74,14 +74,14 @@ const Navbar = () => {
             <X
               className={cn(
                 "w-6 h-6 transition-colors duration-300",
-                isScrolled ? "text-blue-800" : "text-white"
+                isScrolled ? "text-blue-700" : "text-white"
               )}
             />
           ) : (
             <Menu
               className={cn(
                 "w-6 h-6 transition-colors duration-300",
-                isScrolled ? "text-blue-800" : "text-white"
+                isScrolled ? "text-blue-700" : "text-white"
               )}
             />
           )}
@@ -98,14 +98,14 @@ const Navbar = () => {
         <div className="flex flex-col px-6 space-y-4">
           <a
             href="#domains"
-            className="font-medium text-cyan-700 hover:text-blue-800"
+            className="font-medium text-blue-600 hover:text-blue-800"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Domains
           </a>
           <a
             href="#contact"
-            className="font-medium text-cyan-700 hover:text-blue-800"
+            className="font-medium text-blue-600 hover:text-blue-800"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact

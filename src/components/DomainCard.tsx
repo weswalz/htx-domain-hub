@@ -16,7 +16,7 @@ const DomainCard = ({ domain, description, featured = false }: DomainCardProps) 
     <div 
       className={cn(
         "domain-card group",
-        featured ? "md:col-span-2 bg-gradient-to-br from-blue-100 to-cyan-100" : "",
+        featured ? "md:col-span-2 bg-gradient-to-br from-blue-50 to-cyan-50" : "",
         isHovered ? "transform scale-[1.02]" : ""
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -40,7 +40,7 @@ const DomainCard = ({ domain, description, featured = false }: DomainCardProps) 
       </div>
       
       {description && (
-        <p className="text-cyan-700/80 mb-6 text-sm">
+        <p className="text-blue-600/80 mb-6 text-sm">
           {description}
         </p>
       )}
@@ -53,7 +53,7 @@ const DomainCard = ({ domain, description, featured = false }: DomainCardProps) 
           <button 
             className={cn(
               "relative px-4 py-1.5 text-sm font-medium rounded-md overflow-hidden transition-all duration-300", 
-              "bg-gradient-to-r from-blue-600 to-cyan-700 text-white", 
+              "bg-gradient-to-r from-blue-500 to-cyan-600 text-white", 
               "after:absolute after:inset-0 after:bg-gradient-to-r after:from-amber-400 after:to-amber-500 after:text-blue-900 after:flex after:items-center after:justify-center after:content-['Inquire'] after:translate-y-full after:hover:translate-y-0 after:transition-transform after:duration-300"
             )}
           >

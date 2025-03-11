@@ -14,13 +14,13 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 200 85% 45%;
+    --primary: 210 85% 45%;
     --primary-foreground: 210 20% 98%;
 
     --secondary: 35 95% 65%;
-    --secondary-foreground: 200 47.4% 30%;
+    --secondary-foreground: 210 47.4% 30%;
 
-    --muted: 200 40% 96.1%;
+    --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 190 90% 50%;
@@ -118,7 +118,7 @@ html {
 
 /* New vibrant background styles */
 .bg-gradient-blue {
-  @apply bg-gradient-to-br from-blue-600 to-cyan-800;
+  @apply bg-gradient-to-br from-blue-500 to-cyan-600;
 }
 
 .bg-gradient-amber {
@@ -128,4 +128,3 @@ html {
 .bg-gradient-teal {
   @apply bg-gradient-to-r from-teal-400 to-cyan-400;
 }
-
