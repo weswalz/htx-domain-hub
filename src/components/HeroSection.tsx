@@ -18,12 +18,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[70vh] overflow-hidden">
       {/* Hero Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-houston-navy bg-opacity-60 backdrop-filter backdrop-blur-sm z-10"></div>
         <img
-          src="https://images.unsplash.com/photo-1633493702341-4d04841df53b?q=80&w=1920&auto=format&fit=crop"
+          src="/lovable-uploads/2bb8bdd1-164f-4096-858f-4a67d321f71b.png"
           alt="Houston Skyline"
           className={cn(
             "absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out",
@@ -36,11 +36,11 @@ const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 text-white text-center">
         <div className={cn("transition-all duration-1000", isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10")}>
-          <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider uppercase bg-houston-gold text-houston-navy rounded-full animate-fade-in">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-houston-gold text-houston-navy rounded-full animate-fade-in">
             Premium Houston Domain Broker
           </span>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-4 leading-tight">
             Secure Your <span className="text-houston-gold">Houston</span> <br />
             Digital Real Estate
           </h1>
@@ -64,33 +64,33 @@ const HeroSection = () => {
                 ))}
                 <span className="invisible">{words[0]}</span>
               </span>{" "}
-              domain names that capture the essence of H-Town
+              domain names
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8 animate-fade-in delay-300">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mt-4 animate-fade-in delay-300">
             <a 
               href="#domains" 
-              className="px-8 py-3 bg-houston-gold text-houston-navy font-medium rounded-md transition-all duration-300 hover:shadow-lg hover:bg-opacity-90"
+              className="px-6 py-2 bg-houston-gold text-houston-navy font-medium rounded-md transition-all duration-300 hover:shadow-lg hover:bg-opacity-90"
             >
               View Domains
             </a>
             <a 
               href="#contact" 
-              className="px-8 py-3 bg-transparent border border-white text-white font-medium rounded-md transition-all duration-300 hover:bg-white/10"
+              className="px-6 py-2 bg-transparent border border-white text-white font-medium rounded-md transition-all duration-300 hover:bg-white/10"
             >
               Contact Us
             </a>
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-float">
           <a 
             href="#domains" 
             className="flex flex-col items-center text-white/80 hover:text-white transition-colors duration-300"
           >
-            <span className="text-sm mb-2">Scroll Down</span>
-            <ArrowDown className="h-5 w-5" />
+            <span className="text-sm mb-1">Scroll Down</span>
+            <ArrowDown className="h-4 w-4" />
           </a>
         </div>
       </div>

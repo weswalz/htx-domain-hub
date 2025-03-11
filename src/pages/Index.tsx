@@ -46,9 +46,9 @@ const Index = () => {
   const contactRef = useRef<HTMLDivElement>(null);
   const featureRef = useRef<HTMLDivElement>(null);
   
-  const domainsInView = useInView(domainsRef, { threshold: 0.1 });
-  const contactInView = useInView(contactRef, { threshold: 0.1 });
-  const featureInView = useInView(featureRef, { threshold: 0.1 });
+  const domainsInView = useInView(domainsRef, { threshold: 0.1, triggerOnce: true });
+  const contactInView = useInView(contactRef, { threshold: 0.1, triggerOnce: true });
+  const featureInView = useInView(featureRef, { threshold: 0.1, triggerOnce: true });
 
   return (
     <main className="min-h-screen bg-houston-cream overflow-hidden">
@@ -59,14 +59,14 @@ const Index = () => {
       <section 
         id="domains" 
         ref={domainsRef} 
-        className="py-24 px-6 md:px-12"
+        className="py-12 px-6 md:px-12"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-houston-navy/10 text-houston-navy rounded-full">
+          <div className="text-center mb-10">
+            <span className="inline-block px-3 py-1 mb-3 text-xs font-medium tracking-wider uppercase bg-houston-navy/10 text-houston-navy rounded-full">
               Available Domains
             </span>
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 text-houston-navy">
+            <h2 className="text-2xl md:text-4xl font-display font-bold mb-3 text-houston-navy">
               Premium Houston Domain Names
             </h2>
             <p className="text-houston-slate/80 max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ const Index = () => {
       {/* Features Section */}
       <section 
         ref={featureRef}
-        className="py-20 px-6 md:px-12 bg-gradient-to-b from-white to-houston-cream"
+        className="py-16 px-6 md:px-12 bg-gradient-to-b from-white to-houston-cream"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -119,10 +119,10 @@ const Index = () => {
               <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-houston-navy/10 text-houston-navy rounded-full">
                 Why Choose Our Domains
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-houston-navy">
+              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4 text-houston-navy">
                 Strategic Digital Real Estate in Houston
               </h2>
-              <p className="text-houston-slate/80 mb-8">
+              <p className="text-houston-slate/80 mb-6">
                 These domain names offer an exclusive opportunity to secure memorable, location-specific web addresses that instantly connect your brand to Houston and its surrounding areas.
               </p>
               
@@ -168,7 +168,7 @@ const Index = () => {
             
             <div 
               className={cn(
-                "relative h-[500px] transform transition-all duration-1000",
+                "relative h-[400px] transform transition-all duration-1000",
                 featureInView 
                   ? "opacity-100 translate-x-0" 
                   : "opacity-0 translate-x-12"
@@ -197,7 +197,7 @@ const Index = () => {
       <section 
         id="contact" 
         ref={contactRef}
-        className="py-24 px-6 md:px-12 bg-houston-slate/5"
+        className="py-16 px-6 md:px-12 bg-houston-slate/5"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -212,14 +212,14 @@ const Index = () => {
               <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase bg-houston-navy/10 text-houston-navy rounded-full">
                 Get in Touch
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-houston-navy">
+              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4 text-houston-navy">
                 Interested in a Domain?
               </h2>
-              <p className="text-houston-slate/80 mb-10">
-                Contact us today to inquire about pricing, availability, and transfer details for any of our premium Houston domain names. We're here to help you secure the perfect web address for your business or project.
+              <p className="text-houston-slate/80 mb-8">
+                Contact us today to inquire about pricing, availability, and transfer details for any of our premium Houston domain names.
               </p>
               
-              <div className="space-y-6 mb-8">
+              <div className="space-y-5 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-houston-navy/10 flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-houston-navy" viewBox="0 0 20 20" fill="currentColor">
