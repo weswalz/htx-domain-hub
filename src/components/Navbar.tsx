@@ -34,10 +34,10 @@ const Navbar = () => {
           href="#"
           className={cn(
             "text-2xl font-display font-bold transition-colors duration-300",
-            isScrolled ? "text-houston-navy" : "text-white"
+            isScrolled ? "text-purple-800" : "text-white"
           )}
         >
-          HTX Domains
+          Houston Domains
         </a>
 
         {/* Desktop Menu */}
@@ -45,8 +45,8 @@ const Navbar = () => {
           <a
             href="#domains"
             className={cn(
-              "font-medium transition-all duration-300 hover:text-houston-gold",
-              isScrolled ? "text-houston-slate" : "text-white"
+              "font-medium transition-all duration-300 hover:text-amber-400",
+              isScrolled ? "text-indigo-700" : "text-white"
             )}
           >
             Domains
@@ -54,13 +54,13 @@ const Navbar = () => {
           <a
             href="#contact"
             className={cn(
-              "font-medium transition-all duration-300 hover:text-houston-gold",
-              isScrolled ? "text-houston-slate" : "text-white"
+              "font-medium transition-all duration-300 hover:text-amber-400",
+              isScrolled ? "text-indigo-700" : "text-white"
             )}
           >
             Contact
           </a>
-          <button className="bg-houston-gold text-houston-navy px-5 py-2 rounded-md font-medium transition-all duration-300 hover:bg-opacity-90 shadow-md hover:shadow-lg">
+          <button className="bg-gradient-to-r from-amber-400 to-amber-500 text-purple-900 px-5 py-2 rounded-md font-medium transition-all duration-300 hover:opacity-90 shadow-md hover:shadow-lg">
             Get a Quote
           </button>
         </div>
@@ -74,14 +74,14 @@ const Navbar = () => {
             <X
               className={cn(
                 "w-6 h-6 transition-colors duration-300",
-                isScrolled ? "text-houston-navy" : "text-white"
+                isScrolled ? "text-purple-800" : "text-white"
               )}
             />
           ) : (
             <Menu
               className={cn(
                 "w-6 h-6 transition-colors duration-300",
-                isScrolled ? "text-houston-navy" : "text-white"
+                isScrolled ? "text-purple-800" : "text-white"
               )}
             />
           )}
@@ -98,14 +98,14 @@ const Navbar = () => {
         <div className="flex flex-col px-6 space-y-4">
           <a
             href="#domains"
-            className="font-medium text-houston-slate hover:text-houston-navy"
+            className="font-medium text-indigo-700 hover:text-purple-800"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Domains
           </a>
           <a
             href="#contact"
-            className="font-medium text-houston-slate hover:text-houston-navy"
+            className="font-medium text-indigo-700 hover:text-purple-800"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact
@@ -115,7 +115,7 @@ const Navbar = () => {
               setIsMobileMenuOpen(false);
               document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="bg-houston-gold text-houston-navy px-4 py-2 rounded-md font-medium w-full text-center"
+            className="bg-gradient-to-r from-amber-400 to-amber-500 text-purple-900 px-4 py-2 rounded-md font-medium w-full text-center"
           >
             Get a Quote
           </button>
