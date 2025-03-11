@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-purple-800 to-indigo-900 text-white py-16">
+    <footer className="bg-gradient-to-br from-blue-800 to-cyan-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>

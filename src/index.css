@@ -1,10 +1,11 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 250 60% 96%;
+    --background: 210 60% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 265 64% 50%;
+    --primary: 200 85% 45%;
     --primary-foreground: 210 20% 98%;
 
-    --secondary: 45 93% 66%;
-    --secondary-foreground: 280 47.4% 30%;
+    --secondary: 35 95% 65%;
+    --secondary-foreground: 200 47.4% 30%;
 
-    --muted: 271 40% 96.1%;
+    --muted: 200 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 180 90% 50%;
+    --accent: 190 90% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -116,8 +117,8 @@ html {
 }
 
 /* New vibrant background styles */
-.bg-gradient-purple {
-  @apply bg-gradient-to-br from-purple-600 to-indigo-800;
+.bg-gradient-blue {
+  @apply bg-gradient-to-br from-blue-600 to-cyan-800;
 }
 
 .bg-gradient-amber {
@@ -127,3 +128,4 @@ html {
 .bg-gradient-teal {
   @apply bg-gradient-to-r from-teal-400 to-cyan-400;
 }
+
